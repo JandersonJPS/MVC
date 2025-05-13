@@ -20,6 +20,10 @@ switch ($uri) {
         // Processa o envio do formulário
         (new VideoController())->store();
         break;
+        case '/mvc/public/videos/teste':
+            // Processa o envio do formulário
+            (new VideoController())->store();
+            break;
     default:
         // Retorna erro 404 para rotas não encontradas
         http_response_code(404);
